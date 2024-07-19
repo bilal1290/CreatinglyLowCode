@@ -5,7 +5,7 @@ module.exports = {
     },
     // Defining env variables with values
     env: {
-      userId: "bilalhussain9454+cypresstest@gmail.com",
+      userId: "bilalhussain9454@gmail.com",
       password: "Bilal@470"
     },
     // Defining baseUrl of product

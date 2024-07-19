@@ -31,3 +31,10 @@ Cypress.Commands.add('hover', { prevSubject: 'element' }, (subject, options) => 
     cy.wrap(subject).trigger('mousemove', options);
     cy.wrap(subject).trigger('mouseover', {force: true}); // Ensure the event is forced
   });
+
+  Cypress.Commands.add('loginWithUI',(userId,password)=>{
+    cy.visit('https://dev-login.platform.creatingly.com/login')
+    cy.get('input[name="email"]').should('be.visible').type(userId)
+    cy.get('input[name="password"]').should('be.visible').type(password)
+    cy.get('#recaptcha-anchor > div.recaptcha-checkbox-border').click()
+  })
