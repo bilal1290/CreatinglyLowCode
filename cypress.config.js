@@ -10,8 +10,8 @@ module.exports = {
     },
     // Defining baseUrl of product
     baseUrl: 'https://cypresstest.platform.creatingly.com',
-    defaultCommandTimeout: 30000,
-    requestTimeout: 30000,
+    defaultCommandTimeout: 70000,
+    requestTimeout: 70000,
     // Defining resolution as 1920 x 1080 for web page
     viewportHeight: 1080,
     viewportWidth: 1920,

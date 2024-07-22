@@ -9,7 +9,7 @@
     "cy-run-single": "cypress run --browser chrome --headed --spec 'cypress/e2e/**/*.js"
   },
   "dependencies": {
-    
+    "cypress-real-events": "^1.13.0"
   },
   "devDependencies": {
     "cypress": "^13.12.0",

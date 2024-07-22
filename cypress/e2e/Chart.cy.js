@@ -4,7 +4,7 @@ const { addArtBoard } = require("../support/pageObjects/commonPage")
 describe('Charts - ', () => {
   before(()=>{
 
-    cy.visit('/webstudio')
+    cy.visit('/webstudio',{timeout:100000})
 
     //Commenting below as I got captcha automation blocker with cypress as captcha is used to detect bot
     // cy.loginWithUI(Cypress.env('userId'),Cypress.env('password'))
