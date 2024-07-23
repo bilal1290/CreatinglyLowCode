@@ -1,4 +1,4 @@
-const { createChartInArtBoard } = require("../support/pageObjects/chartPage")
+const { createChartInArtBoard, stretchToChartInArtBoard, deleteArtBoard } = require("../support/pageObjects/chartPage")
 const { addArtBoard } = require("../support/pageObjects/commonPage")
 
 describe('Charts - ', () => {
@@ -10,10 +10,15 @@ describe('Charts - ', () => {
     // cy.loginWithUI(Cypress.env('userId'),Cypress.env('password'))
 
   })
+  after(()=>{
+    deleteArtBoard()
+  })
   it('verify user is able to drop a Chart element inside a stack container', () => {
 
     addArtBoard();
 
     createChartInArtBoard();
+    stretchToChartInArtBoard()
+
   })
 })
