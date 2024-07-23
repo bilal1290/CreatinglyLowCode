@@ -1,4 +1,4 @@
-# Cypress Framework Setup with Page Object Model (POM)
+# Cypress Framework Setup with Page Object Model (POM) for Creatingly LowCode Automation
 
 This repository contains a setup guide and structure for implementing Cypress automated tests using the Page Object Model (POM) approach. 
 
